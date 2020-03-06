@@ -1,0 +1,11 @@
+template:
+    # Name of the directory containing the website template (default is "website")
+    directory: website
+    # Or if you are using a remote template, you can set the Git URL
+    url: https://github.com/CouscousPHP/Template-Light.git
+    index: ../README.md
+
+
+# Any variable you put in this file is also available in the Twig layouts:
+title: Github Action for Couscous
+subTitle: Couscous is good.
