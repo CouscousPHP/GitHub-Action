@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Github Action for Couscous</title>
+
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/highlight.dark.css">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="/">
+                Github Action for Couscous
+                <small class="hidden-xs hidden-sm">
+                    Couscous is good.
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container">
+            <div class="row">
+
+                
+                <section id="content" class="col-sm-12">
+                    <h1 id="actions-couscous">actions-couscous</h1>
+<p><a href="https://github.com/BilelJegham/actions-couscous/releases/latest"><img src="https://img.shields.io/github/release/BilelJegham/actions-couscous.svg" alt="release" /></a>
+<a href="https://github.com/BilelJegham/actions-couscous/blob/master/LICENSE"><img src="https://img.shields.io/github/license/BilelJegham/actions-couscous.svg" alt="license" /></a></p>
+<p>[<img src="https://github.com/BilelJegham/actions-couscous/workflows/Couscous%20Artefact/badge.svg" alt="Couscous Artefact" />]() [<img src="https://github.com/BilelJegham/actions-couscous/workflows/Coucous%20GithubPage/badge.svg" alt="Couscous GithubPage" />]()</p>
+<h2 id="getting-started">Getting started</h2>
+<p>Add your workflow file, the following step</p>
+<pre><code class="language-yml">  - uses: `BilelJegham/actions-couscous@v0`</code></pre>
+<h2 id="example">Example</h2>
+<h3 id="publish-on-githubpage">Publish on GithubPage</h3>
+<pre><code class="language-yml">name: Couscous GithubPage
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+
+      - uses: `BilelJegham/actions-couscous@v0`
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./.couscous/generated</code></pre>
+<h3 id="artefact">Artefact</h3>
+<p>Generate zip artefact with the generate website.</p>
+<pre><code class="language-yml">name: Couscous Artefact
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+
+      - uses: `BilelJegham/actions-couscous@v0`
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          # Artifact name
+          name: Couscous
+          # Directory containing files to upload
+          path: .couscous/generated
+</code></pre>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>
