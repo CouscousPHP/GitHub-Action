@@ -30,16 +30,16 @@
 
                 
                 <section id="content" class="col-sm-12">
-                    <h1 id="actions-couscous">Actions-couscous</h1>
-<p><a href="https://github.com/BilelJegham/actions-couscous/releases/latest"><img src="https://img.shields.io/github/release/BilelJegham/actions-couscous.svg" alt="release" /></a>
-<a href="https://github.com/BilelJegham/actions-couscous/blob/master/LICENSE"><img src="https://img.shields.io/github/license/BilelJegham/actions-couscous.svg" alt="license" /></a></p>
-<p><img src="https://github.com/BilelJegham/actions-couscous/workflows/Couscous%20Artefact/badge.svg" alt="Couscous Artefact" />
-<img src="https://github.com/BilelJegham/actions-couscous/workflows/Couscous%20GithubPage/badge.svg" alt="Couscous GithubPage" /></p>
+                    <h1 id="action-couscous">Action-couscous</h1>
+<p><a href="https://github.com/BilelJegham/action-couscous/releases/latest"><img src="https://img.shields.io/github/release/BilelJegham/action-couscous.svg" alt="release" /></a>
+<a href="https://github.com/BilelJegham/action-couscous/blob/master/LICENSE"><img src="https://img.shields.io/github/license/BilelJegham/action-couscous.svg" alt="license" /></a></p>
+<p><img src="https://github.com/BilelJegham/action-couscous/workflows/Couscous%20Artefact/badge.svg" alt="Couscous Artefact" />
+<img src="https://github.com/BilelJegham/action-couscous/workflows/Couscous%20GithubPage/badge.svg" alt="Couscous GithubPage" /></p>
 <p>Couscous turns Markdown documentation into websites. <a href="http://couscous.io/">http://couscous.io/</a></p>
 <p>This is a GitHub Action to generate couscous websites. View : <a href="https://bileljegham.github.io/actions-couscous/">https://bileljegham.github.io/actions-couscous/</a></p>
 <h2 id="getting-started">Getting started</h2>
 <p>Add your workflow file, the following step</p>
-<pre><code class="language-yml">  - uses: `BilelJegham/actions-couscous@v0`</code></pre>
+<pre><code class="language-yml">  - uses: `BilelJegham/action-couscous@v0`</code></pre>
 <h2 id="examples">Examples</h2>
 <h3 id="publish-on-githubpage">Publish on GithubPage</h3>
 <pre><code class="language-yml">name: Couscous GithubPage
@@ -55,7 +55,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: `BilelJegham/actions-couscous@v0`
+      - uses: `BilelJegham/action-couscous@v0`
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -76,7 +76,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: `BilelJegham/actions-couscous@v0`
+      - uses: `BilelJegham/action-couscous@v0`
 
       - name: Upload artifact
         uses: actions/upload-artifact@v1.0.0
