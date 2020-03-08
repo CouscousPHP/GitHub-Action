@@ -39,7 +39,7 @@
 <p>This is a GitHub Action to generate couscous websites. View : <a href="https://bileljegham.github.io/actions-couscous/">https://bileljegham.github.io/actions-couscous/</a></p>
 <h2 id="getting-started">Getting started</h2>
 <p>Add your workflow file, the following step</p>
-<pre><code class="language-yml">  - uses: `BilelJegham/action-couscous@v0`</code></pre>
+<pre><code class="language-yml">  - uses: BilelJegham/actions-couscous@v0</code></pre>
 <h2 id="examples">Examples</h2>
 <h3 id="publish-on-githubpage">Publish on GithubPage</h3>
 <pre><code class="language-yml">name: Couscous GithubPage
@@ -55,7 +55,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: `BilelJegham/action-couscous@v0`
+      - uses: BilelJegham/action-couscous@v0
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
