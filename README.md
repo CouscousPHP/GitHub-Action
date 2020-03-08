@@ -62,7 +62,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: `BilelJegham/action-couscous@v0`
+      - uses: BilelJegham/action-couscous@v0
 
       - name: Upload artifact
         uses: actions/upload-artifact@v1.0.0
