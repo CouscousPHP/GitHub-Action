@@ -7,5 +7,5 @@ runs:
   image: "Dockerfile"
 
 branding:
-  icon: "mic"
-  color: "purple"
+  icon: "book-open"
+  color: "yellow"
