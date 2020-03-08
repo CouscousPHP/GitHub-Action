@@ -1,10 +1,10 @@
-Actions-couscous
+Action-couscous
 ===
-[![release](https://img.shields.io/github/release/BilelJegham/actions-couscous.svg)](https://github.com/BilelJegham/actions-couscous/releases/latest)
-[![license](https://img.shields.io/github/license/BilelJegham/actions-couscous.svg)](https://github.com/BilelJegham/actions-couscous/blob/master/LICENSE)
+[![release](https://img.shields.io/github/release/BilelJegham/action-couscous.svg)](https://github.com/BilelJegham/action-couscous/releases/latest)
+[![license](https://img.shields.io/github/license/BilelJegham/action-couscous.svg)](https://github.com/BilelJegham/action-couscous/blob/master/LICENSE)
 
-![Couscous Artefact](https://github.com/BilelJegham/actions-couscous/workflows/Couscous%20Artefact/badge.svg) 
-![Couscous GithubPage](https://github.com/BilelJegham/actions-couscous/workflows/Couscous%20GithubPage/badge.svg)
+![Couscous Artefact](https://github.com/BilelJegham/action-couscous/workflows/Couscous%20Artefact/badge.svg) 
+![Couscous GithubPage](https://github.com/BilelJegham/action-couscous/workflows/Couscous%20GithubPage/badge.svg)
 
 Couscous turns Markdown documentation into websites. http://couscous.io/
 
@@ -15,7 +15,7 @@ This is a GitHub Action to generate couscous websites. View : https://bileljegha
 
 Add your workflow file, the following step
 ```yml
-  - uses: `BilelJegham/actions-couscous@v0`
+  - uses: `BilelJegham/action-couscous@v0`
 ```
 
 ## Examples
@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: `BilelJegham/actions-couscous@v0`
+      - uses: `BilelJegham/action-couscous@v0`
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -62,7 +62,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: `BilelJegham/actions-couscous@v0`
+      - uses: `BilelJegham/action-couscous@v0`
 
       - name: Upload artifact
         uses: actions/upload-artifact@v1.0.0
