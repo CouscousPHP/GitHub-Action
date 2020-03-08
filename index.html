@@ -30,14 +30,17 @@
 
                 
                 <section id="content" class="col-sm-12">
-                    <h1 id="actions-couscous">actions-couscous</h1>
+                    <h1 id="actions-couscous">Actions-couscous</h1>
 <p><a href="https://github.com/BilelJegham/actions-couscous/releases/latest"><img src="https://img.shields.io/github/release/BilelJegham/actions-couscous.svg" alt="release" /></a>
 <a href="https://github.com/BilelJegham/actions-couscous/blob/master/LICENSE"><img src="https://img.shields.io/github/license/BilelJegham/actions-couscous.svg" alt="license" /></a></p>
-<p>[<img src="https://github.com/BilelJegham/actions-couscous/workflows/Couscous%20Artefact/badge.svg" alt="Couscous Artefact" />]() [<img src="https://github.com/BilelJegham/actions-couscous/workflows/Coucous%20GithubPage/badge.svg" alt="Couscous GithubPage" />]()</p>
+<p><img src="https://github.com/BilelJegham/actions-couscous/workflows/Couscous%20Artefact/badge.svg" alt="Couscous Artefact" />
+<img src="https://github.com/BilelJegham/actions-couscous/workflows/Couscous%20GithubPage/badge.svg" alt="Couscous GithubPage" /></p>
+<p>Couscous turns Markdown documentation into websites. <a href="http://couscous.io/">http://couscous.io/</a>
+This is a GitHub Action to generate couscous websites.</p>
 <h2 id="getting-started">Getting started</h2>
 <p>Add your workflow file, the following step</p>
 <pre><code class="language-yml">  - uses: `BilelJegham/actions-couscous@v0`</code></pre>
-<h2 id="example">Example</h2>
+<h2 id="examples">Examples</h2>
 <h3 id="publish-on-githubpage">Publish on GithubPage</h3>
 <pre><code class="language-yml">name: Couscous GithubPage
 
@@ -58,7 +61,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./.couscous/generated</code></pre>
-<h3 id="artefact">Artefact</h3>
+<h3 id="artefact-zip">Artefact zip</h3>
 <p>Generate zip artefact with the generate website.</p>
 <pre><code class="language-yml">name: Couscous Artefact
 
@@ -83,6 +86,8 @@ jobs:
           # Directory containing files to upload
           path: .couscous/generated
 </code></pre>
+<h2 id="license">License</h2>
+<p>Couscous is released under the MIT License.</p>
                 </section>
 
             </div>
