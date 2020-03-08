@@ -15,7 +15,7 @@ This is a GitHub Action to generate couscous websites. View : https://bileljegha
 
 Add your workflow file, the following step
 ```yml
-  - uses: `BilelJegham/action-couscous@v0`
+  - uses: BilelJegham/actions-couscous@v0
 ```
 
 ## Examples
@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: `BilelJegham/action-couscous@v0`
+      - uses: BilelJegham/action-couscous@v0
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
