@@ -9,3 +9,5 @@ template:
 # Any variable you put in this file is also available in the Twig layouts:
 title: Github Action for Couscous
 subTitle: Couscous is good.
+
+baseUrl: https://bileljegham.github.io/action-couscous/
