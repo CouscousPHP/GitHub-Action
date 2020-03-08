@@ -7,7 +7,8 @@ Actions-couscous
 ![Couscous GithubPage](https://github.com/BilelJegham/actions-couscous/workflows/Couscous%20GithubPage/badge.svg)
 
 Couscous turns Markdown documentation into websites. http://couscous.io/
-This is a GitHub Action to generate couscous websites.
+
+This is a GitHub Action to generate couscous websites. View : https://bileljegham.github.io/actions-couscous/
 
 
 ## Getting started
