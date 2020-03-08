@@ -1,9 +1,13 @@
-actions-couscous
+Actions-couscous
 ===
 [![release](https://img.shields.io/github/release/BilelJegham/actions-couscous.svg)](https://github.com/BilelJegham/actions-couscous/releases/latest)
 [![license](https://img.shields.io/github/license/BilelJegham/actions-couscous.svg)](https://github.com/BilelJegham/actions-couscous/blob/master/LICENSE)
 
-[![Couscous Artefact](https://github.com/BilelJegham/actions-couscous/workflows/Couscous%20Artefact/badge.svg)]() [![Couscous GithubPage](https://github.com/BilelJegham/actions-couscous/workflows/Coucous%20GithubPage/badge.svg)]()
+![Couscous Artefact](https://github.com/BilelJegham/actions-couscous/workflows/Couscous%20Artefact/badge.svg) 
+![Couscous GithubPage](https://github.com/BilelJegham/actions-couscous/workflows/Couscous%20GithubPage/badge.svg)
+
+Couscous turns Markdown documentation into websites. http://couscous.io/
+This is a GitHub Action to generate couscous websites.
 
 
 ## Getting started
@@ -13,7 +17,7 @@ Add your workflow file, the following step
   - uses: `BilelJegham/actions-couscous@v0`
 ```
 
-## Example
+## Examples
 
 ### Publish on GithubPage
 
@@ -41,7 +45,7 @@ jobs:
 
 
 
-### Artefact 
+### Artefact zip
 Generate zip artefact with the generate website.
 ```yml
 name: Couscous Artefact
@@ -68,3 +72,6 @@ jobs:
           path: .couscous/generated
 
 ```
+
+## License
+Couscous is released under the MIT License.
