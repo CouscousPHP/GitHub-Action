@@ -1,6 +1,6 @@
 name: "Couscous Generate"
 description: "generate couscous.io docs"
-author: "BilelJegham"
+author: "CouscousPHP"
 
 runs:
   using: "docker"

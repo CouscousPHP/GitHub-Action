@@ -1,21 +1,21 @@
 Action-couscous
 ===
 [![release](https://img.shields.io/github/release/BilelJegham/action-couscous.svg)](https://github.com/BilelJegham/action-couscous/releases/latest)
-[![license](https://img.shields.io/github/license/BilelJegham/action-couscous.svg)](https://github.com/BilelJegham/action-couscous/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/CouscousPHP/GitHub-Action.svg)](https://github.com/CouscousPHP/GitHub-Action/blob/master/LICENSE)
 
-![Couscous Artefact](https://github.com/BilelJegham/action-couscous/workflows/Couscous%20Artefact/badge.svg) 
-![Couscous GithubPage](https://github.com/BilelJegham/action-couscous/workflows/Couscous%20GithubPage/badge.svg)
+![Couscous Artefact](https://github.com/CouscousPHP/GitHub-Action/workflows/Couscous%20Artefact/badge.svg) 
+![Couscous GithubPage](https://github.com/CouscousPHP/GitHub-Action/workflows/Couscous%20GithubPage/badge.svg)
 
 Couscous turns Markdown documentation into websites. http://couscous.io/
 
-This is a GitHub Action to generate couscous websites. View : https://bileljegham.github.io/actions-couscous/
+This is a GitHub Action to generate couscous websites. View : https://couscousphp.github.io/GitHub-Action/
 
 
 ## Getting started
 
 Add your workflow file, the following step
 ```yml
-  - uses: BilelJegham/actions-couscous@v0
+  - uses: CouscousPHP/GitHub-Action@v1
 ```
 
 ## Examples
@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: BilelJegham/action-couscous@v0
+      - uses: CouscousPHP/GitHub-Action@v1
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -62,7 +62,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: BilelJegham/action-couscous@v0
+      - uses: CouscousPHP/GitHub-Action@v1
 
       - name: Upload artifact
         uses: actions/upload-artifact@v1.0.0
