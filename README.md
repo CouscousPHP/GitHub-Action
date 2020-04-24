@@ -1,6 +1,6 @@
-Action-couscous
+Couscous - Github Action
 ===
-[![release](https://img.shields.io/github/release/BilelJegham/action-couscous.svg)](https://github.com/BilelJegham/action-couscous/releases/latest)
+[![release](https://img.shields.io/github/release/CouscousPHP/GitHub-Action.svg)](https://github.com/CouscousPHP/GitHub-Action/releases/latest)
 [![license](https://img.shields.io/github/license/CouscousPHP/GitHub-Action.svg)](https://github.com/CouscousPHP/GitHub-Action/blob/master/LICENSE)
 
 ![Couscous Artefact](https://github.com/CouscousPHP/GitHub-Action/workflows/Couscous%20Artefact/badge.svg) 
